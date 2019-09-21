@@ -4,6 +4,13 @@
   box-sizing: border-box;
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
+
+:root {
+  --main-color: darkseagreen;
+  --light-color: #dbdcdd;
+  --dark-color: #636466;
+}
+
 body {
   padding: 25px 0;
 }
@@ -13,17 +20,17 @@ body {
   max-width: 1024px;
   widows: 100%;
   display: flex;
-  color: #636466;
+  color: var(--dark-color);
   box-shadow: 0 0 10px 0;
 }
 .container_first {
   width: 340px;
-  background-color: #dbdcdd;
+  background-color: var(--light-color);
   display: flex;
   flex-direction: column;
 }
 .container_second {
-  background-color: #636466;
+  background-color: var(--dark-color);
   color: #fff;
 }
 
@@ -35,6 +42,8 @@ section {
 h2 {
   text-transform: capitalize;
   text-align: left;
+  /* var(--main-bg-color); */
+  border-bottom: 2px solid var(--main-color);
 }
 h3 {
   text-transform: uppercase;
@@ -44,12 +53,12 @@ h4 {
   text-transform: capitalize;
 }
 a {
-  color: #636466;
+  color: var(--dark-color);
   text-decoration: none;
   transition: 0.15s linear;
 }
 a:hover {
-  color: darkslateblue;
+  color: var(--main-color);
   font-weight: 600;
 }
 
@@ -66,14 +75,14 @@ a:hover {
   text-align: center;
 }
 .social {
-  fill: #636466;
+  fill: var(--dark-color);
   max-height: 50px;
   max-width: 50px;
   margin: 10px 10px 0 0;
   transition: 0.15s linear;
 }
 .social:hover {
-  fill: darkslateblue;
+  fill: var(--main-color);
 }
 
 /* heder */
@@ -111,6 +120,18 @@ a:hover {
   flex-wrap: wrap;
 }
 
+/* footer */
+footer {
+  display: none;
+  background-color: var(--light-color);
+}
+
+@media (max-width: 991px) {
+  body {
+    padding: 0;
+  }
+}
+
 @media (max-width: 767px) {
   .section_experience .box,
   .section_education .box {
@@ -118,5 +139,21 @@ a:hover {
   }
   .container_second .heading {
     max-width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .wrapper_page {
+    flex-direction: column;
+  }
+  .container_first {
+    max-width: 100%;
+  }
+  footer {
+    display: block;
+    text-align: right;
+  }
+  .container_first .section_contact,
+  .container_first .section_reference {
+    display: none;
   }
 }
