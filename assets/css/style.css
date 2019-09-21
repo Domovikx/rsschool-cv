@@ -56,6 +56,16 @@ h4 {
   flex-direction: column;
   text-align: center;
 }
+.social {
+  fill: #636466;
+  max-height: 50px;
+  max-width: 50px;
+  margin: 10px 10px 0 0;
+  transition: .15s linear;
+}
+.social:hover{
+  fill: darkslategray;
+}
 
 /* heder */
 .header {
@@ -72,15 +82,21 @@ h4 {
   max-width: 340px;
   width: 100%;
 }
+.section_reference a{
+  text-decoration: none; 
+}
 
 /* container_second */
 .container_second .box {
   display: flex;
+  padding: 15px 0;
 }
 
 .container_second .heading {
   max-width: 160px;
   width: 100%;
+  margin-right: 20px;
+  text-align: right;
 }
 
 /* section_hobbies */
