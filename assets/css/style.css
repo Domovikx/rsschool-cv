@@ -41,6 +41,20 @@ h3 {
 }
 h4 {
   display: inline;
+  text-transform: capitalize;
+}
+
+/* icon */
+.icon {
+  fill: #fff;
+  max-width: 64px;
+  max-height: 100px;
+  margin: 0 auto;
+}
+.block_icon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 /* heder */
@@ -54,20 +68,23 @@ h4 {
 }
 
 /* container_first */
-.container_first{
-    max-width: 340px;
-    width: 100%;
+.container_first {
+  max-width: 340px;
+  width: 100%;
 }
 
 /* container_second */
 .container_second .box {
-    display: flex;
+  display: flex;
 }
 
 .container_second .heading {
-    max-width: 160px;
-    width: 100%;
+  max-width: 160px;
+  width: 100%;
 }
 
-.container_second .content {
+/* section_hobbies */
+.section_hobbies .box {
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
