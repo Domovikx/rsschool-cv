@@ -43,6 +43,15 @@ h4 {
   display: inline;
   text-transform: capitalize;
 }
+a {
+  color: #636466;
+  text-decoration: none;
+  transition: 0.15s linear;
+}
+a:hover {
+  color: darkslateblue;
+  font-weight: 600;
+}
 
 /* icon */
 .icon {
@@ -61,10 +70,10 @@ h4 {
   max-height: 50px;
   max-width: 50px;
   margin: 10px 10px 0 0;
-  transition: .15s linear;
+  transition: 0.15s linear;
 }
-.social:hover{
-  fill: darkslategray;
+.social:hover {
+  fill: darkslateblue;
 }
 
 /* heder */
@@ -81,9 +90,6 @@ h4 {
 .container_first {
   max-width: 340px;
   width: 100%;
-}
-.section_reference a{
-  text-decoration: none; 
 }
 
 /* container_second */
@@ -103,4 +109,14 @@ h4 {
 .section_hobbies .box {
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .section_experience .box,
+  .section_education .box {
+    flex-direction: column;
+  }
+  .container_second .heading {
+    max-width: 100%;
+  }
 }
