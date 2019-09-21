@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+body{
+    padding: 25px 0;
+}
+
+.wrapper_page {
+  margin: 0 auto;
+  max-width: 1024px;
+  widows: 100%;
+  display: flex;
+  color: #636466;
+  box-shadow: 0 0 10px 0;
+}
+.container_first {
+  width: 340px;
+  background-color: #dbdcdd;
+  display: flex;
+  flex-direction: column;
+}
+.container_second {
+  background-color: #636466;
+  color: #fff;
+}
+
+header,
+section {
+  width: inherit;
+  padding: 25px;
+}
+
+/* heder */
+.header {
+  text-align: center;
+}
+
+.header_img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0;
+}
