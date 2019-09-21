@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+:root {
+  --light-color: #dbdcdd;
+  --dark-color: #636466;
+  --second-color: darkseagreen;
+}
+
+body {
+  padding: 25px 0;
+}
+
+.wrapper_page {
+  margin: 0 auto;
+  max-width: 1024px;
+  widows: 100%;
+  display: flex;
+  color: var(--dark-color);
+  box-shadow: 0 0 10px 0;
+}
+.container_first {
+  width: 340px;
+  background-color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+}
+.container_second {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+header,
+section {
+  padding: 25px;
+}
+
+h2 {
+  text-transform: capitalize;
+  text-align: left;
+  border-bottom: 2px solid var(--second-color);
+}
+h3 {
+  text-transform: uppercase;
+}
+h4 {
+  display: inline;
+  text-transform: capitalize;
+}
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+  transition: 0.15s linear;
+}
+a:hover {
+  color: var(--second-color);
+  font-weight: 600;
+}
+
+/* icon */
+.icon {
+  fill: #fff;
+  max-width: 64px;
+  max-height: 100px;
+  margin: 0 auto;
+  transition: 0.15s linear;
+}
+.icon:hover {
+  fill: var(--second-color);
+}
+.block_icon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.social {
+  fill: var(--dark-color);
+  max-height: 50px;
+  max-width: 50px;
+  margin: 10px 10px 0 0;
+  transition: 0.15s linear;
+}
+.social:hover {
+  fill: var(--second-color);
+}
+
+/* heder */
+.header {
+  text-align: center;
+}
+.header_img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0;
+}
+
+/* container_first */
+.container_first {
+  max-width: 340px;
+  width: 100%;
+}
+
+/* container_second */
+.container_second .box {
+  display: flex;
+  padding: 15px 0;
+}
+
+.container_second .heading {
+  max-width: 160px;
+  width: 100%;
+  margin-right: 20px;
+  text-align: right;
+}
+
+/* section_hobbies */
+.section_hobbies .box {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* footer */
+footer {
+  display: none;
+  background-color: var(--light-color);
+}
+
+@media (max-width: 991px) {
+  body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .section_experience .box,
+  .section_education .box {
+    flex-direction: column;
+  }
+  .container_second .heading {
+    max-width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .wrapper_page {
+    flex-direction: column;
+  }
+  .container_first {
+    max-width: 100%;
+  }
+  footer {
+    display: block;
+    text-align: right;
+  }
+  .container_first .section_contact,
+  .container_first .section_reference {
+    display: none;
+  }
+}
