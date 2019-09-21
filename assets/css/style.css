@@ -6,9 +6,9 @@
 }
 
 :root {
-  --main-color: darkseagreen;
   --light-color: #dbdcdd;
   --dark-color: #636466;
+  --second-color: darkseagreen;
 }
 
 body {
@@ -42,8 +42,7 @@ section {
 h2 {
   text-transform: capitalize;
   text-align: left;
-  /* var(--main-bg-color); */
-  border-bottom: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--second-color);
 }
 h3 {
   text-transform: uppercase;
@@ -58,7 +57,7 @@ a {
   transition: 0.15s linear;
 }
 a:hover {
-  color: var(--main-color);
+  color: var(--second-color);
   font-weight: 600;
 }
 
@@ -68,6 +67,10 @@ a:hover {
   max-width: 64px;
   max-height: 100px;
   margin: 0 auto;
+  transition: 0.15s linear;
+}
+.icon:hover {
+  fill: var(--second-color);
 }
 .block_icon {
   display: flex;
@@ -82,7 +85,7 @@ a:hover {
   transition: 0.15s linear;
 }
 .social:hover {
-  fill: var(--main-color);
+  fill: var(--second-color);
 }
 
 /* heder */
